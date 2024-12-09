@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ReynaCastro_A2
+{
+    public partial class Menu : Form
+    {
+        public Menu()
+        {
+            InitializeComponent();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void saludoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Saludo formSaludo = new Saludo();
+            formSaludo.Show();
+        }
+
+        private void datosPersonalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Información_Personal formInfoPersonal = new Información_Personal();
+            formInfoPersonal.Show();
+        }
+
+        private void operacionesBásicasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Operaciones_Básicas formOperaciones = new Operaciones_Básicas();
+            formOperaciones.Show();
+        }
+    }
+}
