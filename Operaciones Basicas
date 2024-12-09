@@ -1,0 +1,86 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ReynaCastro_A2
+{
+    public partial class Operaciones_Básicas : Form
+    {
+        public Operaciones_Básicas()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double num1 = Convert.ToDouble(txtNum1.Text);
+            double num2 = Convert.ToDouble(txtNum2.Text);
+            double num3 = Convert.ToDouble(txtNum3.Text);
+            double num4 = Convert.ToDouble(txtNum4.Text);
+            double num5 = Convert.ToDouble(txtNum5.Text);
+            double num6 = Convert.ToDouble(txtNum6.Text);
+            double resultado = num1 + num2 + num3 + num4 + num5 + num6;
+            txtResultado.Text = resultado.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double num1 = Convert.ToDouble(txtNum1.Text);
+            double num2 = Convert.ToDouble(txtNum2.Text);
+            double num3 = Convert.ToDouble(txtNum3.Text);
+            double num4 = Convert.ToDouble(txtNum4.Text);
+            double num5 = Convert.ToDouble(txtNum5.Text);
+            double num6 = Convert.ToDouble(txtNum6.Text);
+            double resultado = num1 - num2 - num3 - num4 - num5 - num6;
+            txtResultado.Text = resultado.ToString();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            txtNum1.Clear();
+            txtNum2.Clear();
+            txtNum3.Clear();
+            txtNum4.Clear();
+            txtNum5.Clear();
+            txtNum6.Clear();
+            txtResultado.Clear();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Menu formMenu = new Menu();
+            formMenu.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            double num1 = Convert.ToDouble(txtNum1.Text);
+            double num2 = Convert.ToDouble(txtNum2.Text);
+            double num3 = Convert.ToDouble(txtNum3.Text);
+            double num4 = Convert.ToDouble(txtNum4.Text);
+            double num5 = Convert.ToDouble(txtNum5.Text);
+            double num6 = Convert.ToDouble(txtNum6.Text);
+            double resultado = num1 * num2 * num3 * num4 * num5 * num6;
+            txtResultado.Text = resultado.ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            double num1 = Convert.ToDouble(txtNum1.Text);
+            double num2 = Convert.ToDouble(txtNum2.Text);
+            double num3 = Convert.ToDouble(txtNum3.Text);
+            double num4 = Convert.ToDouble(txtNum4.Text);
+            double num5 = Convert.ToDouble(txtNum5.Text);
+            double num6 = Convert.ToDouble(txtNum6.Text);
+            double resultado = num1 / num2 / num3 / num4 / num5 / num6;
+            txtResultado.Text = resultado.ToString();
+        }
+    }
+}
